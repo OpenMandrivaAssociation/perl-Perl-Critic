@@ -23,6 +23,7 @@ BuildRequires:	perl(Module::Pluggable)
 BuildRequires:	perl(Perl::Tidy)
 BuildRequires:	perl(Set::Scalar)
 BuildRequires:	perl(B::Keywords)
+BuildRequires:	perl(Readonly)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
