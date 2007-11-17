@@ -24,6 +24,7 @@ BuildRequires:	perl(Perl::Tidy)
 BuildRequires:	perl(Set::Scalar)
 BuildRequires:	perl(B::Keywords)
 BuildRequires:	perl(Readonly)
+BuildRequires:	perl(Exception::Class)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
