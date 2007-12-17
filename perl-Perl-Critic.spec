@@ -26,7 +26,6 @@ BuildRequires:	perl(B::Keywords)
 BuildRequires:	perl(Readonly)
 BuildRequires:	perl(Exception::Class)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl::Critic is an extensible framework for creating and applying coding
