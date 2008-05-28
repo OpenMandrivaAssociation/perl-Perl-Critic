@@ -1,6 +1,6 @@
 %define	module	Perl-Critic
 %define	name	perl-%{module}
-%define version 1.082
+%define version 1.084
 %define release %mkrel 1
 
 Name:		%{name}
