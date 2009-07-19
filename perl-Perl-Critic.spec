@@ -8,7 +8,7 @@ License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Critique Perl source for style and standards
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstream_version}.tar.gz
 Requires:       perl(Module::Pluggable)
 BuildRequires:	perl(PPI) >= 1.118
 BuildRequires:	perl(String::Format)
