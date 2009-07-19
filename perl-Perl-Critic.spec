@@ -1,20 +1,15 @@
-%define	module	Perl-Critic
-%define	name	perl-%{module}
-%define version 1.098
-%define release %mkrel 1
+%define upstream_name       Perl-Critic
+%define upstream_version    1.100
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Critique Perl source for style and standards
-Url:		http://search.cpan.org/dist/%{module}/
-Source:		http://www.cpan.org/modules/by-module/Perl/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source:     http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
 Requires:       perl(Module::Pluggable)
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
 BuildRequires:	perl(PPI) >= 1.118
 BuildRequires:	perl(String::Format)
 BuildRequires:	perl(Config::Tiny)
@@ -42,7 +37,7 @@ for perlcritic. If you want to integrate Perl::Critic with your build process,
 Test::Perl::Critic provides a nice interface that is suitable for test scripts.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
