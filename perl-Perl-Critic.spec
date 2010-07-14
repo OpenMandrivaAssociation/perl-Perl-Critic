@@ -1,5 +1,5 @@
 %define upstream_name       Perl-Critic
-%define upstream_version    1.105
+%define upstream_version 1.108
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -57,7 +57,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc Changes README
 %{perl_vendorlib}/Perl
+%{perl_vendorlib}/Test
 %{_bindir}/*
 %{_mandir}/*/*
-
-
