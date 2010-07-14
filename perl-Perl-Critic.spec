@@ -4,24 +4,31 @@
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
-License:	GPL or Artistic
-Group:		Development/Perl
+
 Summary:	Critique Perl source for style and standards
+License:	GPL+ or Artistic
+Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstream_version}.tar.gz
-Requires:       perl(Module::Pluggable)
-BuildRequires:	perl(PPI) >= 1.118
-BuildRequires:	perl(String::Format)
+Source0:    http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstream_version}.tar.gz
+
+BuildRequires:	perl(B::Keywords)
 BuildRequires:	perl(Config::Tiny)
+BuildRequires:	perl(Email::Address)
+BuildRequires:	perl(Exception::Class)
 BuildRequires:  perl(IO::String)
 BuildRequires:	perl(Module::Pluggable)
 BuildRequires:	perl(Perl::Tidy)
-BuildRequires:	perl(Set::Scalar)
-BuildRequires:	perl(B::Keywords)
+BuildRequires:	perl(PPI) >= 1.118.0
+BuildRequires:	perl(PPIx::Utilities::Statement)
 BuildRequires:	perl(Readonly)
-BuildRequires:	perl(Exception::Class)
+BuildRequires:	perl(Set::Scalar)
+BuildRequires:	perl(String::Format)
+BuildRequires:	perl(Task::Weaken)
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
+
+Requires:       perl(Module::Pluggable)
 
 %description
 Perl::Critic is an extensible framework for creating and applying coding
@@ -44,7 +51,7 @@ Test::Perl::Critic provides a nice interface that is suitable for test scripts.
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
