@@ -1,5 +1,5 @@
 %define upstream_name       Perl-Critic
-%define upstream_version 1.111
+%define upstream_version 1.115
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
