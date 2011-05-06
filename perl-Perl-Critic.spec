@@ -18,13 +18,15 @@ BuildRequires:	perl(Exception::Class)
 BuildRequires:  perl(IO::String)
 BuildRequires:	perl(Module::Pluggable)
 BuildRequires:	perl(Perl::Tidy)
+BuildRequires:	perl(Pod::Spell)
 BuildRequires:	perl(PPI) >= 1.118.0
 BuildRequires:	perl(PPIx::Utilities::Statement)
+BuildRequires:	perl(PPIx::Regexp)
 BuildRequires:	perl(Readonly)
 BuildRequires:	perl(Set::Scalar)
 BuildRequires:	perl(String::Format)
 BuildRequires:	perl(Task::Weaken)
-
+BuildRequires:	perl(Test::Deep)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
