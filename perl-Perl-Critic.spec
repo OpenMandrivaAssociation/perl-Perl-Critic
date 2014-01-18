@@ -1,14 +1,14 @@
 %define modname	Perl-Critic
-%define modver	1.116
+%define modver 1.118
 
 Summary:	Critique Perl source for style and standards
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Perl/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(B::Keywords)
 BuildRequires:	perl(Config::Tiny)
@@ -62,4 +62,5 @@ Test::Perl::Critic provides a nice interface that is suitable for test scripts.
 %{perl_vendorlib}/Test
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
