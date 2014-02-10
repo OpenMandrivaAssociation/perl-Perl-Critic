@@ -1,5 +1,5 @@
 %define modname	Perl-Critic
-%define modver 1.118
+%define modver 1.121
 
 Summary:	Critique Perl source for style and standards
 Name:		perl-%{modname}
@@ -62,5 +62,6 @@ Test::Perl::Critic provides a nice interface that is suitable for test scripts.
 %{perl_vendorlib}/Test
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
