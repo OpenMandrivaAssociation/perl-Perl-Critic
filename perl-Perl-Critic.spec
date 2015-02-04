@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(B::Keywords)
+BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Config::Tiny)
 BuildRequires:	perl(Email::Address)
 BuildRequires:	perl(Exception::Class)
