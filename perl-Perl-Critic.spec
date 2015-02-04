@@ -1,10 +1,10 @@
 %define modname	Perl-Critic
-%define modver 1.121
+%define modver 1.123
 
 Summary:	Critique Perl source for style and standards
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -46,14 +46,14 @@ Test::Perl::Critic provides a nice interface that is suitable for test scripts.
 %setup -qn %{modname}-%{modver} 
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%__perl Build.PL --installdirs=vendor
+./Build
 
 %check
-%make test
+./Build test
 
 %install
-%makeinstall_std
+./Build install --destdir=%{buildroot}
 
 %files
 %doc Changes README

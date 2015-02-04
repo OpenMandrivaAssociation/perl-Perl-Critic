@@ -1,5 +1,6 @@
 removed_sources:
   Perl-Critic-1.116.tar.gz: 12d6c134df307e885f122114dee94eeabc071009
   Perl-Critic-1.118.tar.gz: 39d95dd6805660a316c5bcae96692cc7e9523314
-sources:
   Perl-Critic-1.121.tar.gz: 937e273b6e507f5db63319bfa7eba438562890f1
+sources:
+  Perl-Critic-1.123.tar.gz: bbce8d0dd5841f439679cf0cd9f6ac39f5d9b742
