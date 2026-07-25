@@ -1,14 +1,14 @@
 %define modname	Perl-Critic
-%define modver 1.123
+%define modver 1.156
 
 Summary:	Critique Perl source for style and standards
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	4
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-%{modver}.tar.gz
+Url:		https://github.com/Perl-Critic/Perl-Critic
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Perl-Critic-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(B::Keywords)
 BuildRequires:	perl(Module::Build)
